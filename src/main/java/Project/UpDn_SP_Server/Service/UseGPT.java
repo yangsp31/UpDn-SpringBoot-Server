@@ -22,8 +22,6 @@ public class UseGPT {
                 new MultiChatMessage("system", role),
                 new MultiChatMessage("user", Data));
 
-        String responseMessage = chatgptService.multiChat(messages);
-
-        return responseMessage;
+        return chatgptService.multiChat(messages);
     }
 }
