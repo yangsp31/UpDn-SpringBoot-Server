@@ -18,22 +18,22 @@ public class article_data {
     @Column(name = "publication_date")
     private LocalDate publicationDate;
 
-    @Column(name = "article_title")
-    private String articleTitle;
-
-    @Column(name = "category")
-    private String category;
+    @Column(name = "article_summary")
+    private String articleSummary;
 
     @Column(name = "url")
     private String url;
 
+    @Column(name = "category")
+    private String category;
+
     public article_data() {}
 
     @Builder
-    public article_data(long dataIndex, LocalDate publicationDate, String articleTitle, String category, String url) {
+    public article_data(long dataIndex, LocalDate publicationDate, String articleSummary, String category, String url) {
         this.dataIndex = dataIndex;
         this.publicationDate = publicationDate;
-        this.articleTitle = articleTitle;
+        this.articleSummary = articleSummary;
         this.category = category;
         this.url = url;
     }

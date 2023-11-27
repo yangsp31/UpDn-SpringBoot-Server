@@ -1,6 +1,6 @@
 package Project.UpDn_SP_Server.Controller;
 
-import Project.UpDn_SP_Server.Domain.ResponseDTO;
+import Project.UpDn_SP_Server.Domain.SummaryDTO;
 import Project.UpDn_SP_Server.Service.DataProcessing;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +17,7 @@ public class UpDnController {
     }
 
     @GetMapping("/UpDn/SP")
-    public ResponseDTO gptExpectation(@RequestParam(name = "keyWord") String keyword) {
+    public SummaryDTO gptExpectation(@RequestParam(name = "keyWord") String keyword) {
         return dataProcessing.DataProcess(keyword);
     }
 }

@@ -10,7 +10,7 @@ import java.util.List;
 public class UseGPT {
     private final ChatgptService chatgptService;
 
-    @Value("${Gpt.role2}")
+    @Value("${Gpt.role}")
     private String role;
 
     public UseGPT(ChatgptService chatgptService) {

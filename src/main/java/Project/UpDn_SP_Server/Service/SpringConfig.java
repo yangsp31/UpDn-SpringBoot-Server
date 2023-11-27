@@ -23,6 +23,11 @@ public class SpringConfig {
 
     @Bean
     public DataProcessing dataProcessing() {
-        return new DataProcessing(updnRepository, useGPT());
+        return new DataProcessing(updnRepository, useGPT(), textProcessing());
+    }
+
+    @Bean
+    public  TextProcessing textProcessing() {
+        return new TextProcessing();
     }
 }
