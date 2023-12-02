@@ -7,10 +7,12 @@ import lombok.Builder;
 import lombok.Getter;
 import java.time.LocalDate;
 
+// 스프링부트에서 Mysql과 연결하여 JPA를 사용하기 위한 엔티티
 @Entity
 @Getter
 public class article_data {
 
+    // 실제 Mysql 테이블 내에 선언 되어있는 각 컬럼들과 매핑
     @Id
     @Column(name = "data_index")
     private long dataIndex;
