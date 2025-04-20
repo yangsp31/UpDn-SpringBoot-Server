@@ -136,7 +136,7 @@ You are a cold, realistic stock analyst who utilizes all the GPT databases you h
   ```
 <br><br>
 
-# 개선 필요사항/방법
+* ### 개선 필요사항/방법
   * 뉴스기사 DB 조회 방식을 LIKE%'KeyWord'% 에서 다른 방식으로 탐색/전환 필요. (ex: FULLTEXT - 정확히 잘 모름. 추가 학습 필요)
   * RealTimeData를 1분 ~ 10분 단위로 주기적으로 수집하여, DB나 Redis에 저장한 뒤, 사용자의 요청 시 SpringBoot가 이를 직접 조회해 응답하는 구조나, 외부 API를 앱에서 직접 호출하도록 하는 방식으로 전환.
 
