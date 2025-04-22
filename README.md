@@ -9,6 +9,7 @@
 * 크롤링한 경제 뉴스 데이터를 기반으로, Prompt engineering을 활용하여 Chat GPT로 해당 기업의 주가 등락을 예측하는 서비스.
 * 주식 투자자의 의사결정 과정에 신뢰성 있는 정보 제공과 경제 분야 뉴스 기사 접근성을 높일 수 있는 서비스.
 * 단시간 내에 가치있는 주식/경제 정보를 얻을 수 있는 플랫폼 역할 수행.
+* Chat GPT API와 연동되어 데이터를 가공, 정제하여 Mobile application의 요청을 처리하는 Back-end application.
 <br><br>
 
 # Architecture
